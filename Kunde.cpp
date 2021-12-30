@@ -1,11 +1,13 @@
 #include "Kunde.h"
+#include "Lebensversicherung.h"
+#include <string>
 
-Kunde::Kunde(string n) {
-    name = n;
-}
+Kunde::Kunde(string n):name(n){}
 
-void Kunde::neueLV(float vs, float b, string beg) {
 
+//Aufgabe der Methode ist es, den Versicherungen eines Kunden eine neue Lebensversicherung mit der Versicherungssumme vs, dem Beitrag b und dem Begünstigten beg hinzuzufügen.
+void Kunde::neueLV(float vs, float b, string beg){
+    Lebensversicherung lv(vs, b, beg);
 }
 
 float Kunde::getGesamtBeitrag() {

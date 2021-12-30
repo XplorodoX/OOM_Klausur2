@@ -2,6 +2,6 @@
 #include <string>
 #include "Lebensversicherung.h"
 using namespace std;
-Kunde kunde();
 int main() {
+    Lebensversicherung lv =  Lebensversicherung(1, 1, "m");
 }

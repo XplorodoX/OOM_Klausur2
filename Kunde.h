@@ -1,9 +1,10 @@
 #ifndef OOM_KLAUSUR2_KUNDE_H
 #define OOM_KLAUSUR2_KUNDE_H
 #include <string>
-#include "Versicherung.h"
 #include <list>
+#include "Versicherung.h"
 using namespace std;
+
 class Kunde {
 public:
     Kunde(string n);
@@ -17,6 +18,5 @@ private:
     list<Versicherung*> versicherungen;
     string name;
 };
-
 
 #endif //OOM_KLAUSUR2_KUNDE_H

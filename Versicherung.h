@@ -1,15 +1,16 @@
-#ifndef OOM_KLAUSUR2_VERSICHERUNG_H
-#define OOM_KLAUSUR2_VERSICHERUNG_H
+#ifndef VERSICHERUNG_H
+#define VERSICHERUNG_H
 #include <string>
 #include <list>
-#include "Kunde.h"
+class Kunde;
+
 using namespace std;
 
-class Versicherung : public CObject{
+class Versicherung{
 protected:
     float beitrag;
     float versSumme;
-    Kunde * versicherungsnehmer;
+    Kunde* versicherungsnehmer;
 public:
     Versicherung(float vs, float b);
     virtual float getBeitrag();
@@ -20,5 +21,4 @@ public:
         versicherungsnehmer = vn;
     }
 };
-
-#endif //OOM_KLAUSUR2_VERSICHERUNG_H
+#endif // VERSICHERUNG_H
